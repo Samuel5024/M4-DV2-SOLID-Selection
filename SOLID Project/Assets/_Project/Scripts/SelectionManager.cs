@@ -17,17 +17,19 @@ public class SelectionManager : MonoBehaviour
 
     private void Update()
     {
+        // Deselection/Selection Response
         if (_selection != null)
         {
-            var selectionRenderer = _selection.GetComponent<Renderer>();
-            if (selectionRenderer != null)
-            {
-                selectionRenderer.material = defaultMaterial;
-            }
+            var selection = _selection;
+            OnDeselect(selection);
         }
 
+        #region MyRegion
+
+        // Creating a Ray
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         
+        // Selection Determination
         _selection = null;
         if (Physics.Raycast(ray, out var hit))
         {
@@ -38,13 +40,31 @@ public class SelectionManager : MonoBehaviour
             }
         }
 
+        #endregion
+        
+        // Deselection/Selection Response
         if (_selection != null)
         {
-            var selectionRenderer = _selection.GetComponent<Renderer>();
-            if (selectionRenderer != null)
-            {
-                selectionRenderer.material = highlightMaterial;
-            }
+            var selection = _selection;
+            OnSelect(selection);
+        }
+    }
+
+    private void OnSelect(Transform selection)
+    {
+        var selectionRenderer = selection.GetComponent<Renderer>();
+        if (selectionRenderer != null)
+        {
+            selectionRenderer.material = highlightMaterial;
+        }
+    }
+
+    private void OnDeselect(Transform selection)
+    {
+        var selectionRenderer = selection.GetComponent<Renderer>();
+        if (selectionRenderer != null)
+        {
+            selectionRenderer.material = defaultMaterial;
         }
     }
 }

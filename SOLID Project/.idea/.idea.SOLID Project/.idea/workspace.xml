@@ -1,5 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="737e4826-f5c7-4e3a-9b96-1ee6564fa1d3" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0000000000019598" />
+      <entry key="S10" value="1.0000013999434674" />
+      <entry key="S30" value="1.0111867388415907" />
+      <entry key="S60" value="1.1057673808014115" />
+      <entry key="M2" value="1.325218973618409" />
+      <entry key="M5" value="1.6380729736475645" />
+      <entry key="M10" value="1.7987947005630198" />
+      <entry key="M15" value="1.8609080788768972" />
+      <entry key="M30" value="1.9278513236919466" />
+      <entry key="H1" value="1.9632503951164237" />
+      <entry key="H2" value="1.9814532057701089" />
+      <entry key="H4" value="1.990683201518078" />
+      <entry key="D1" value="1.9984411377364195" />
+      <entry key="W1" value="1.9997771564685172" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="1.1660465855841583E-103" />
+      <entry key="S2" value="3.071871475601859E-26" />
+      <entry key="S5" value="9.444196429314341E-11" />
+      <entry key="S10" value="1.3741316810782208E-5" />
+      <entry key="S30" value="0.038020171938210806" />
+      <entry key="S60" value="0.27575291656095685" />
+      <entry key="M2" value="0.7426335657867962" />
+      <entry key="M5" value="1.34563635519027" />
+      <entry key="M10" value="1.6405098208255522" />
+      <entry key="M15" value="1.7525182559175527" />
+      <entry key="M30" value="1.872174264691222" />
+      <entry key="H1" value="1.9350319170955408" />
+      <entry key="H2" value="1.967247780990698" />
+      <entry key="H4" value="1.9835562914565679" />
+      <entry key="D1" value="1.997249945703868" />
+      <entry key="W1" value="1.9996069033885258" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.0037672347319792E-8" />
+      <entry key="MS500" value="0.025137761591934864" />
+      <entry key="S2" value="0.3981820248526211" />
+      <entry key="S5" value="0.6918830008120241" />
+      <entry key="S10" value="0.83180895726726" />
+      <entry key="S30" value="0.9880941032993923" />
+      <entry key="S60" value="1.3448786264093406" />
+      <entry key="M2" value="2.0433946206674354" />
+      <entry key="M5" value="2.9706145452399024" />
+      <entry key="M10" value="3.43192683487925" />
+      <entry key="M15" value="3.6082956752657753" />
+      <entry key="M30" value="3.797346370525555" />
+      <entry key="H1" value="3.896912681870507" />
+      <entry key="H2" value="3.948008464356886" />
+      <entry key="H4" value="3.9738912791990364" />
+      <entry key="D1" value="3.995632774408275" />
+      <entry key="W1" value="3.9993757232707354" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3LzVRvIN8ZLl8wje6HjEG5kmQZc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "cidr.known.project.marker": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.44f1\Editor\Unity.exe" />
@@ -35,5 +127,46 @@
     <configuration name="Attach to" type="UnityDevicePlayer" factoryName="UnityAttachToDevicePlayer">
       <method v="2" />
     </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="737e4826-f5c7-4e3a-9b96-1ee6564fa1d3" name="Changes" comment="" />
+      <created>1794456881091</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1794456881091</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityProjectDiscoverer">
+    <option name="hasUnityReference" value="true" />
+    <option name="unityProject" value="true" />
+    <option name="unityProjectFolder" value="true" />
+  </component>
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
