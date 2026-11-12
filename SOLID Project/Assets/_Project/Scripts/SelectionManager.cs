@@ -8,6 +8,7 @@ public class SelectionManager : MonoBehaviour
     private IRayProvider _rayProvider;
     private ISelectionResponse _selectionResponse;
     
+    private Transform _currentselection;
     private Transform _selection;
 
     private void Awake()
@@ -19,12 +20,21 @@ public class SelectionManager : MonoBehaviour
 
     private void Update()
     {
-        if (_selection != null) _selectionResponse.OnDeselect(_selection);
+        if (_currentselection != null) _selectionResponse.OnDeselect(_currentselection);
 
         // Creating a Ray
         var ray = _rayProvider.CreateRay();
         
         // Selection Determination
+        Check(ray);
+
+        _currentselection = _selection;
+        
+        if (_currentselection != null) _selectionResponse.OnSelect(_currentselection);
+    }
+
+    public void Check(Ray ray)
+    {
         _selection = null;
         if (Physics.Raycast(ray, out var hit))
         {
@@ -34,8 +44,6 @@ public class SelectionManager : MonoBehaviour
                 _selection = selection;
             }
         }
-        
-        if (_selection != null) _selectionResponse.OnSelect(_selection);
     }
 }
 
