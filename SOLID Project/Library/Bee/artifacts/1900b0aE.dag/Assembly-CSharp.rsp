@@ -416,6 +416,7 @@
 "Assets/QuickOutline/Scripts/Outline.cs"
 "Assets/_Project/Scripts/HighlightSelectionResponse.cs"
 "Assets/_Project/Scripts/ISelectionResponse.cs"
+"Assets/_Project/Scripts/OutlineSelectionResponse.cs"
 "Assets/_Project/Scripts/SelectionManager.cs"
 -langversion:9.0
 /deterministic
