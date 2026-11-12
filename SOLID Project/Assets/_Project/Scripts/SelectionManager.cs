@@ -4,9 +4,9 @@ using UnityEngine.SceneManagement;
 public class SelectionManager : MonoBehaviour
 {
     [SerializeField] private string selectableTag = "Selectable";
-    [SerializeField] private Material highlightMaterial;
-    [SerializeField] private Material defaultMaterial;
-
+   
+    private HighlightSelectionResponse _selectionResponse;
+    
     private Transform _selection;
 
     private void Awake()
@@ -20,8 +20,7 @@ public class SelectionManager : MonoBehaviour
         // Deselection/Selection Response
         if (_selection != null)
         {
-            var selection = _selection;
-            OnDeselect(selection);
+            _selectionResponse.OnDeselect(_selection);
         }
 
         #region MyRegion
@@ -45,26 +44,31 @@ public class SelectionManager : MonoBehaviour
         // Deselection/Selection Response
         if (_selection != null)
         {
-            var selection = _selection;
-            OnSelect(selection);
+            _selectionResponse.OnSelect(_selection);
         }
     }
+}
 
-    private void OnSelect(Transform selection)
+internal class HighlightSelectionResponse : MonoBehaviour
+{
+    [SerializeField] public Material highlightMaterial;
+    [SerializeField] public Material defaultMaterial;
+
+    public void OnSelect(Transform selection)
     {
         var selectionRenderer = selection.GetComponent<Renderer>();
         if (selectionRenderer != null)
         {
-            selectionRenderer.material = highlightMaterial;
+            selectionRenderer.material = this.highlightMaterial;
         }
     }
 
-    private void OnDeselect(Transform selection)
+    public void OnDeselect(Transform selection)
     {
         var selectionRenderer = selection.GetComponent<Renderer>();
         if (selectionRenderer != null)
         {
-            selectionRenderer.material = defaultMaterial;
+            selectionRenderer.material = this.defaultMaterial;
         }
     }
 }
