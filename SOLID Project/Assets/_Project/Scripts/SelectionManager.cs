@@ -4,7 +4,8 @@ using UnityEngine.SceneManagement;
 public class SelectionManager : MonoBehaviour
 {
     [SerializeField] private string selectableTag = "Selectable";
-   
+
+    private IRayProvider _rayProvider;
     private ISelectionResponse _selectionResponse;
     
     private Transform _selection;
@@ -18,16 +19,10 @@ public class SelectionManager : MonoBehaviour
 
     private void Update()
     {
-        // Deselection/Selection Response
-        if (_selection != null)
-        {
-            _selectionResponse.OnDeselect(_selection);
-        }
-
-        #region MyRegion
+        if (_selection != null) _selectionResponse.OnDeselect(_selection);
 
         // Creating a Ray
-        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        var ray = _rayProvider.CreateRay();
         
         // Selection Determination
         _selection = null;
@@ -39,13 +34,20 @@ public class SelectionManager : MonoBehaviour
                 _selection = selection;
             }
         }
-
-        #endregion
         
-        // Deselection/Selection Response
-        if (_selection != null)
-        {
-            _selectionResponse.OnSelect(_selection);
-        }
+        if (_selection != null) _selectionResponse.OnSelect(_selection);
+    }
+}
+
+public interface IRayProvider
+{
+    Ray CreateRay();
+}
+
+public class MouseScreenRayProvider : MonoBehaviour, IRayProvider
+{
+    public Ray CreateRay()
+    {
+        return Camera.main.ScreenPointToRay(Input.mousePosition);
     }
 }
