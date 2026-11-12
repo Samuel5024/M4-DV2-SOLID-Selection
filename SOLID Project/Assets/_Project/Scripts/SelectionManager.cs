@@ -5,12 +5,13 @@ public class SelectionManager : MonoBehaviour
 {
     [SerializeField] private string selectableTag = "Selectable";
    
-    private HighlightSelectionResponse _selectionResponse;
+    private ISelectionResponse _selectionResponse;
     
     private Transform _selection;
 
     private void Awake()
     {
+        _selectionResponse = GetComponent<ISelectionResponse>();
         SceneManager.LoadScene("Environment", LoadSceneMode.Additive);
         SceneManager.LoadScene("UI", LoadSceneMode.Additive);
     }
@@ -49,7 +50,13 @@ public class SelectionManager : MonoBehaviour
     }
 }
 
-internal class HighlightSelectionResponse : MonoBehaviour
+internal interface ISelectionResponse
+{
+    void OnSelect(Transform selection);
+    void OnDeselect(Transform selection);
+}
+
+internal class HighlightSelectionResponse : MonoBehaviour, ISelectionResponse
 {
     [SerializeField] public Material highlightMaterial;
     [SerializeField] public Material defaultMaterial;
