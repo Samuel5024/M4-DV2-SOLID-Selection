@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class RayCastBasedTagSelector : MonoBehaviour, ISelector
 {
-    [SerializeField] public string selectableTag = "Selectable";
-    public Transform _selection;
+    [SerializeField] private string selectableTag = "Selectable";
+    private Transform _selection;
 
     public void Check(Ray ray)
     {

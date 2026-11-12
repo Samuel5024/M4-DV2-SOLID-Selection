@@ -421,6 +421,8 @@
 "Assets/_Project/Scripts/MouseScreenRayProvider.cs"
 "Assets/_Project/Scripts/OutlineSelectionResponse.cs"
 "Assets/_Project/Scripts/RayCastBasedTagSelector.cs"
+"Assets/_Project/Scripts/ResponsiveSelector.cs"
+"Assets/_Project/Scripts/Selectable.cs"
 "Assets/_Project/Scripts/SelectionManager.cs"
 -langversion:9.0
 /deterministic
