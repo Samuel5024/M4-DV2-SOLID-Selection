@@ -415,8 +415,12 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/QuickOutline/Scripts/Outline.cs"
 "Assets/_Project/Scripts/HighlightSelectionResponse.cs"
+"Assets/_Project/Scripts/IRayProvider.cs"
 "Assets/_Project/Scripts/ISelectionResponse.cs"
+"Assets/_Project/Scripts/ISelector.cs"
+"Assets/_Project/Scripts/MouseScreenRayProvider.cs"
 "Assets/_Project/Scripts/OutlineSelectionResponse.cs"
+"Assets/_Project/Scripts/RayCastBasedTagSelector.cs"
 "Assets/_Project/Scripts/SelectionManager.cs"
 -langversion:9.0
 /deterministic

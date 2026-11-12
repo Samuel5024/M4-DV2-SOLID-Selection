@@ -529,6 +529,8 @@ GameObject:
   - component: {fileID: 1550730621}
   - component: {fileID: 1550730620}
   - component: {fileID: 1550730622}
+  - component: {fileID: 1550730624}
+  - component: {fileID: 1550730623}
   m_Layer: 0
   m_Name: Selection Manager
   m_TagString: Untagged
@@ -576,6 +578,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d522d066fa44fb49bf6a950d51ac398, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1550730623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550730619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d22cd461a80f4620b24a9792984b6f9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1550730624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550730619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f4aa92f89824c40b7659882510adb18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectableTag: Selectable
+  _selection: {fileID: 0}
 --- !u!1 &1671565416
 GameObject:
   m_ObjectHideFlags: 0
